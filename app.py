@@ -15,4 +15,11 @@ def index():
             })   
 
 
+@app.route("/outra_rota", methods = ["GET"])
+def outra_rota():
+    return jsonify(
+            {
+                'timestamp': str(datetime.now()),
+                'messagem': 'Adicionado outra funcionalidade no código'
 
+            })
