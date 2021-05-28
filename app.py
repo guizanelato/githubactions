@@ -16,3 +16,11 @@ def index():
 
 
 
+@app.route("/outra-rota", methods = ["GET"])
+def index():
+    return jsonify(
+            {
+                'timestamp' : str(datetime.now()),
+                'message': 'Hello, Tópicos Manhã'
+
+            })   
